@@ -10,6 +10,8 @@ app.use('/cars', userRoutes);
 
 app.get('/', (req, res) => res.send('HELLO FROM HOMEPAGE'))
 
-
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
+  });
 
 
